@@ -1,0 +1,970 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "orders" %} {% include "templates/partials/header.njk" %} {% include
+"templates/partials/sidebar.njk" %}
+{% include
+  "templates/partials/notifications-list.njk" %}
+<div class="main-content">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a
+        class="nav-link active"
+        id="tab-01"
+        data-toggle="tab"
+        href="#content-01"
+        role="tab"
+        aria-controls="content-01"
+        aria-selected="true"
+      >
+        الملف العام
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="tab-02"
+        data-toggle="tab"
+        href="#content-02"
+        role="tab"
+        aria-controls="content-02"
+        aria-selected="true"
+        >الخدمات
+      </a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div
+      class="tab-pane fade show active"
+      id="content-01"
+      role="tabpanel"
+      aria-labelledby="tab-01"
+    >
+      <table class="table table-bordered main-table table-responsive-md">
+        <tbody>
+          <tr>
+            <th scope="row">اسم الموظف</th>
+            <td>مني مصطفي</td>
+            <th scope="row">رقم الهاتف</th>
+            <td colspan="2">0556772252</td>
+            <td rowspan="9">
+              <div class="file-photos">
+                <img
+                  class="picture-employee"
+                  src="assets/images/person-image.png"
+                  alt=""
+                />
+                <img
+                  class="code-employee"
+                  src="assets/images/code-image.png"
+                  alt=""
+                />
+                <button type="button" class="btn-main">طباعة الملف</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">البريد الإلكتروني</th>
+            <td>info@vision-dm2030.co</td>
+            <th scope="row">رقم الهوية</th>
+            <td>2540002644</td>
+          </tr>
+          <tr>
+            <th scope="row">تاريخ الميلاد</th>
+            <td>1998 /6 /1</td>
+            <th scope="row">النوع</th>
+            <td>أنثي</td>
+          </tr>
+          <tr>
+            <th scope="row">المؤهل</th>
+            <td>بكالوريوس في العلوم والتربية</td>
+            <th scope="row">تاريخ التخرج</th>
+            <td>2020 / 7 /1</td>
+          </tr>
+          <tr>
+            <th scope="row">المسمي الوظيفي</th>
+            <td>مصممة</td>
+            <th scope="row">الرقم الوظيفي</th>
+            <td>3554654</td>
+          </tr>
+          <tr>
+            <th scope="row">الرقم التأميني</th>
+            <td>3222545</td>
+            <th scope="row">عدد سنوات الخبرة</th>
+            <td>ثلاثة سنوات</td>
+          </tr>
+          <tr>
+            <th scope="row">تاريخ التعيين</th>
+            <td>2020 / 10 /1</td>
+            <th scope="row">تاريخ انتهاء العقد</th>
+            <td>2025/10 /1</td>
+          </tr>
+          <tr>
+            <th>الراتب</th>
+            <td>4500</td>
+            <th scope="row">تاريخ الزيادة السنوية</th>
+            <td>2025/10 /1</td>
+          </tr>
+          <tr>
+            <th scope="row">القيمة المتوقعة للزيادة</th>
+            <td>500</td>
+            <th scope="row"></th>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="content-02"
+      role="tabpanel"
+      aria-labelledby="tab-02"
+    >
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <div class="orders-tabs">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="tab-03"
+                  data-toggle="tab"
+                  href="#content-03"
+                  role="tab"
+                  aria-controls="content-03"
+                  aria-selected="true"
+                >
+                  الإجازات
+                  <span class="arrow-icon"
+                    ><i class="fa fa-chevron-left"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="tab-04"
+                  data-toggle="tab"
+                  href="#content-04"
+                  role="tab"
+                  aria-controls="content-04"
+                  aria-selected="true"
+                  >إذن تأخير
+                  <span class="arrow-icon"
+                    ><i class="fa fa-chevron-left"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="tab-05"
+                  data-toggle="tab"
+                  href="#content-05"
+                  role="tab"
+                  aria-controls="content-05"
+                  aria-selected="true"
+                  >عهدة
+                  <span class="arrow-icon"
+                    ><i class="fa fa-chevron-left"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="tab-06"
+                  data-toggle="tab"
+                  href="#content-06"
+                  role="tab"
+                  aria-controls="content-06"
+                  aria-selected="true"
+                >
+                  سلفة
+                  <span class="arrow-icon"
+                    ><i class="fa fa-chevron-left"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="tab-07"
+                  data-toggle="tab"
+                  href="#content-07"
+                  role="tab"
+                  aria-controls="content-07"
+                  aria-selected="true"
+                >
+                  تظلم
+
+                  <span class="arrow-icon"
+                    ><i class="fa fa-chevron-left"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="tab-08"
+                  data-toggle="tab"
+                  href="#content-08"
+                  role="tab"
+                  aria-controls="content-08"
+                  aria-selected="true"
+                >
+                  نموذج
+                  <span class="arrow-icon"
+                    ><i class="fa fa-chevron-left"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-12">
+          <div class="tab-content">
+            <div
+              class="tab-pane fade show active"
+              id="content-03"
+              role="tabpanel"
+              aria-labelledby="tab-03"
+            >
+              <div class="tab-head">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="holiday-counter">
+                      <div class="vacation-data number-vacations">
+                        <span class="vacations-title">رصيد الإجازات</span>
+                        <span class="vacations-number">30</span>
+                      </div>
+                      <div class="vacation-data used-vacations">
+                        <span class="vacations-title">مستهلك </span>
+                        <span class="vacations-number">13</span>
+                      </div>
+                      <div class="vacation-data available-vactions">
+                        <span class="vacations-title">متوفر</span>
+                        <span class="vacations-number">15</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <button
+                          type="button"
+                          class="btn-main btn-block btn-success"
+                        >
+                          <span><i class="fa fa-check"></i> </span>
+                          يستحق إجازه
+                        </button>
+                      </div>
+                      <div class="col-md-6">
+                        <button type="button" class="btn-main btn-block">
+                          طلب اجازه
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="tab-09"
+                    data-toggle="tab"
+                    href="#content-09"
+                    role="tab"
+                    aria-controls="content-09"
+                    aria-selected="true"
+                  >
+                    طلبات الإجازات
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="tab-10"
+                    data-toggle="tab"
+                    href="#content-10"
+                    role="tab"
+                    aria-controls="content-10"
+                    aria-selected="true"
+                    >سجل الإجازات
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div
+                  class="tab-pane fade show active"
+                  id="content-09"
+                  role="tabpanel"
+                  aria-labelledby="tab-09"
+                >
+                  <table class="table order-table table-responsive-sm">
+                    <thead class="thead-light">
+                      <tr>
+                        <th class="frist-column" scope="col">تاريخ</th>
+                        <th scope="col">نوع الاجازه</th>
+                        <th scope="col">سبب الاجازه</th>
+                        <th scope="col">التاريخ المطلوب</th>
+                        <th scope="col">عدد الأيام</th>
+                        <th class="last-column" scope="col">الحالة</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status reference-order" href="#"
+                            >قيد المراجعة</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status success-order" href="#"
+                            >مقبولة
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status cancel-order" href="#"
+                            >مرفوضة
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status cancel-order" href="#"
+                            >تم الإلغاء
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="content-10"
+                  role="tabpanel"
+                  aria-labelledby="tab-10"
+                >
+                  <table class="table order-table table-responsive-sm">
+                    <thead class="thead-light">
+                      <tr>
+                        <th class="frist-column" scope="col">تاريخ</th>
+                        <th scope="col">نوع الاجازه</th>
+                        <th scope="col">سبب الاجازه</th>
+                        <th scope="col">التاريخ المطلوب</th>
+                        <th scope="col">عدد الأيام</th>
+                        <th class="last-column" scope="col">الحالة</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status reference-order" href="#"
+                            >قيد المراجعة</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status success-order" href="#"
+                            >مقبولة
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status cancel-order" href="#"
+                            >مرفوضة
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="content-04"
+              role="tabpanel"
+              aria-labelledby="tab-04"
+            >
+              <button type="button" class="btn-main btn-lg mb-0">
+                طلب إذن
+              </button>
+
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="tab-09"
+                    data-toggle="tab"
+                    href="#content-09"
+                    role="tab"
+                    aria-controls="content-09"
+                    aria-selected="true"
+                  >
+                    طلبات الأذونات
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="tab-10"
+                    data-toggle="tab"
+                    href="#content-10"
+                    role="tab"
+                    aria-controls="content-10"
+                    aria-selected="true"
+                  >
+                    سجل الأذونات
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="content-09"
+                  role="tabpanel"
+                  aria-labelledby="tab-09"
+                >
+                  <table class="table order-table table-responsive-sm">
+                    <thead class="thead-light">
+                      <tr>
+                        <th class="frist-column" scope="col">تاريخ</th>
+                        <th scope="col">نوع الإذن</th>
+                        <th scope="col">سبب الإذن</th>
+                        <th scope="col">التاريخ المطلوب</th>
+                        <th scope="col">عدد الساعات</th>
+                        <th class="last-column" scope="col">الحالة</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status reference-order" href="#"
+                            >قيد المراجعة</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status success-order" href="#"
+                            >مقبولة
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status cancel-order" href="#"
+                            >مرفوضة
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status cancel-order" href="#"
+                            >تم الإلغاء
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="content-10"
+                  role="tabpanel"
+                  aria-labelledby="tab-10"
+                >
+                  <table class="table order-table table-responsive-sm">
+                    <thead class="thead-light">
+                      <tr>
+                        <th class="frist-column" scope="col">تاريخ</th>
+                        <th scope="col">نوع الاجازه</th>
+                        <th scope="col">سبب الاجازه</th>
+                        <th scope="col">التاريخ المطلوب</th>
+                        <th scope="col">عدد الأيام</th>
+                        <th class="last-column" scope="col">الحالة</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status reference-order" href="#"
+                            >قيد المراجعة</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status success-order" href="#"
+                            >مقبولة
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25-10-2021</th>
+                        <td>اعتيادي</td>
+                        <td>
+                          <a href="#"><i class="fa fa-external-link"></i> </a>
+                        </td>
+                        <td>20-11-2021</td>
+                        <td>أيام 5</td>
+                        <td>
+                          <a class="order-status cancel-order" href="#"
+                            >مرفوضة
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="content-05"
+              role="tabpanel"
+              aria-labelledby="tab-05"
+            >
+              <div class="tab-head">
+                <div class="row">
+                  <div class="col-md-5">
+                    <!-- <div class="order-counter">
+                    <div class="vacation-data holiday-counter">
+                      <span class="title-order">رصيد الإجازات</span>
+                      <span class="number-times">30</span>
+                    </div>
+                    <div class="vacation-data consumer-order">
+                      <span class="title-order">مستهلك </span>
+                      <span class="number-times">13</span>
+                    </div>
+                    <div class="vacation-data available-order">
+                      <span class="title-order">متوفر</span>
+                      <span class="number-times">15</span>
+                    </div>
+                  </div> -->
+                  </div>
+                  <div class="col-md-7">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <button
+                          type="button"
+                          class="btn-main btn-block btn-success"
+                        >
+                          <span><i class="fa fa-check"></i> </span>
+                          يستحق عهدة
+                        </button>
+                      </div>
+                      <div class="col-md-4">
+                        <button type="button" class="btn-main btn-block">
+                          طلب عهدة
+                        </button>
+                      </div>
+                      <div class="col-md-4">
+                        <button type="button" class="btn-main btn-block">
+                          تسليم عهدة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <table class="table order-table table-responsive-sm">
+                <thead class="thead-light">
+                  <tr>
+                    <th class="frist-column" scope="col">تاريخ</th>
+                    <th scope="col">النوع</th>
+                    <th scope="col">التفاصيل</th>
+                    <th class="last-column" scope="col">الحالة</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>طلب</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status reference-order" href="#"
+                        >قيد المراجعة</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>طلب</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status success-order" href="#">مقبولة </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>طلب</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status cancel-order" href="#"
+                        >تم الإلغاء
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>طلب</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status cancel-order" href="#">مرفوضة </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="content-06"
+              role="tabpanel"
+              aria-labelledby="tab-06"
+            >
+              <div class="tab-head">
+                <div class="row">
+                  <div class="col-md-7">
+                    <!-- <div class="order-counter">
+                    <div class="vacation-data holiday-counter">
+                      <span class="title-order">رصيد الإجازات</span>
+                      <span class="number-times">30</span>
+                    </div>
+                    <div class="vacation-data consumer-order">
+                      <span class="title-order">مستهلك </span>
+                      <span class="number-times">13</span>
+                    </div>
+                    <div class="vacation-data available-order">
+                      <span class="title-order">متوفر</span>
+                      <span class="number-times">15</span>
+                    </div>
+                  </div> -->
+                  </div>
+                  <div class="col-md-5">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <button
+                          type="button"
+                          class="btn-main btn-block btn-success"
+                        >
+                          <span><i class="fa fa-check"></i> </span>
+                          يستحق سلفة
+                        </button>
+                      </div>
+                      <div class="col-md-6">
+                        <button type="button" class="btn-main btn-block">
+                          طلب سلفة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <table class="table order-table table-responsive-sm">
+                <thead class="thead-light">
+                  <tr>
+                    <th class="frist-column" scope="col">تاريخ</th>
+                    <th scope="col">المبلغ</th>
+                    <th scope="col">سبب السلفة</th>
+                    <th class="last-column" scope="col">الحالة</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>2000</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status reference-order" href="#"
+                        >قيد المراجعة</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>2000</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status success-order" href="#">مقبولة </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>2000</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status cancel-order" href="#"
+                        >تم الإلغاء
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>2000</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status cancel-order" href="#">مرفوضة </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="content-07"
+              role="tabpanel"
+              aria-labelledby="tab-07"
+            >
+              <button type="button" class="btn-main btn-lg">تقديم تظلم</button>
+
+              <table class="table order-table table-responsive-sm">
+                <thead class="thead-light">
+                  <tr>
+                    <th class="frist-column" scope="col">تاريخ</th>
+                    <th scope="col">العنوان</th>
+                    <th scope="col">التفاصيل</th>
+                    <th class="last-column" scope="col">الحالة</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>العنوان</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status reference-order" href="#"
+                        >قيد المراجعة</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>العنوان</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status success-order" href="#">مقبولة </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>العنوان</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status cancel-order" href="#"
+                        >تم الإلغاء
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>العنوان</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status cancel-order" href="#">مرفوضة </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="content-08"
+              role="tabpanel"
+              aria-labelledby="tab-08"
+            >
+              <button type="button" class="btn-main btn-lg">نموذج</button>
+              <table class="table order-table">
+                <thead class="thead-light">
+                  <tr>
+                    <th class="frist-column" scope="col">تاريخ</th>
+                    <th scope="col">العنوان</th>
+                    <th scope="col">التفاصيل</th>
+                    <th class="last-column" scope="col">الحالة</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>العنوان</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status reference-order" href="#"
+                        >قيد المراجعة</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>العنوان</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status success-order" href="#">مقبولة </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>العنوان</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status cancel-order" href="#"
+                        >تم الإلغاء
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">25-10-2021</th>
+                    <td>العنوان</td>
+                    <td>
+                      <a href="#"><i class="fa fa-external-link"></i> </a>
+                    </td>
+                    <td>
+                      <a class="order-status cancel-order" href="#">مرفوضة </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

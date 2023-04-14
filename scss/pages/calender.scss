@@ -1,0 +1,113 @@
+.item-body {
+  border-radius: 10px;
+  box-shadow: $main-shadow;
+  padding: 50px;
+  margin-bottom: 40px;
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: $main-color;
+  }
+  .achievement-colors {
+    list-style: none;
+
+    li {
+      margin-bottom: 30px;
+      width: 180px;
+      font-size: 22px;
+      color: rgba($color: $main-color, $alpha: 0.7);
+    }
+    p {
+      float: right;
+      width: 50px;
+      height: 20px;
+
+      margin-left: 30px;
+    }
+  }
+}
+
+.calender-body {
+  // height: 500px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: $main-color;
+  }
+  .main-table {
+    display: block;
+    overflow-y: auto;
+    height: 800px;
+
+    thead {
+      th {
+        padding: 24px 58px;
+
+        color: $blue-color;
+        font-weight: 400;
+        i {
+          font-size: 30px;
+          &:before {
+            color: $border-color;
+          }
+        }
+      }
+      .frist-row {
+        padding: 25px;
+      }
+    }
+    tbody {
+      td {
+        width: 100%;
+        height: 113px !important;
+        text-align: center;
+        padding: 0;
+        position: relative;
+      }
+      .frist-coulm {
+        padding: 0;
+        vertical-align: inherit;
+        font-weight: 400;
+        color: $blue-color;
+      }
+    }
+  }
+}
+.sections-box {
+  p {
+    font-size: 18px;
+  }
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: right;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+}
+.projrct-time {
+  background-color: $Light-blue;
+  color: $blue-color;
+}
+.appointment-time {
+  background-color: $light-orange;
+  color: $orange-color;
+}
+.tasks-time {
+  background-color: $light-green;
+  color: $green-color;
+}
+.projrct {
+  background-color: $Light-blue !important;
+}
+.appointment {
+  background-color: $light-orange !important;
+}
+.tasks {
+  background-color: $light-green !important;
+}

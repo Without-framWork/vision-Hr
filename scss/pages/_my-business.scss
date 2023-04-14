@@ -1,0 +1,29 @@
+.business-tab {
+  .nav-link {
+    width: 280px;
+  }
+
+}
+.business-accordion {
+  .btn-accordion {
+    width: 140px;
+    background-color: $main-color;
+    border-radius: 8px;
+    // margin-bottom: 50px;
+    padding: 10px 20px;
+    color: $white-color;
+    font-size: 26px;
+    font-weight: bold;
+    img {
+      margin-left: 10px;
+    }
+    &:not(.collapsed) {
+      .rotate-icon {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  .card-header {
+    border-bottom: 0;
+  }
+}

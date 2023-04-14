@@ -1,0 +1,97 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "orders" %} {% include "templates/partials/header.njk" %} {% include
+"templates/partials/sidebar.njk" %} {% include
+"templates/partials/page-head.njk" %}
+{% include
+"templates/partials/notifications-list.njk" %}
+
+<div class="main-content main-content-mail">
+  <div class="customer-data">
+    <ul>
+      <li>اسم العميل:<span>عمر القريقرى</span></li>
+      <li>رقم العميل:<span>0538500542</span></li>
+      <li>عدد مشاريع العميل:<span>مشروع 13</span></li>
+    </ul>
+  </div>
+  <table class="table order-table table-responsive-lg">
+    <thead class="thead-light">
+      <tr>
+        <th class="frist-column" scope="col">رقم العقد</th>
+        <th scope="col">نوع العقد</th>
+        <th scope="col">تاريخ الاستلام</th>
+        <th scope="col">المرسل</th>
+        <th scope="col">درجه الاهمية</th>
+        <th scope="col">الملاحظات</th>
+        <th scope="col">مراحل المعاملة</th>
+        <th class="last-column" scope="col">المرفقات</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">CO23322114566</th>
+        <td>رخصة بناء</td>
+        <td>20-10-2021</td>
+        <td>سعد مشعل</td>
+        <td>
+          <a class="order-status cancel-order order-status-md" href="#"
+            >مرتفعة 
+          </a>
+        </td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">CO23322114566</th>
+        <td>رخصة بناء</td>
+        <td>20-10-2021</td>
+        <td>سعد مشعل</td>
+        <td>
+          <a class="order-status reference-order order-status-md" href="#"
+            >متوسطه
+          </a>
+        </td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">CO23322114566</th>
+        <td>رخصة بناء</td>
+        <td>20-10-2021</td>
+        <td>سعد مشعل</td>
+        <td>
+          <a class="order-status success-order order-status-md" href="#"
+            >منخفضة
+          </a>
+        </td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  {% endblock %}
+</div>

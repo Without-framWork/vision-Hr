@@ -1,0 +1,150 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/partials/header.njk" %} {% include
+"templates/partials/sidebar.njk" %}
+{% include
+"templates/partials/notifications-list.njk" %}
+
+<div class="main-content">
+  <div class="profile-page">
+    <div class="row">
+      <div class=" col-lg-4 col-md-3">
+        <div class="user-data">
+          <img src="assets/images/user-image.png" alt="" />
+          <h2>مني مصطفي</h2>
+          <p class="job-name">مصممة</p>
+          <ul>
+            <li>
+              <p>المكافآت</p>
+              <span>5</span>
+            </li>
+            <li class="border-line"></li>
+
+            <li>
+              <p>مخالفات العمل</p>
+              <span>3</span>
+            </li>
+            <li class="border-line"></li>
+
+            <li>
+              <p>التنبيهات</p>
+              <span>2</span>
+            </li>
+          </ul>
+          <h2>التقييم الشهري</h2>
+
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 80%"
+              aria-valuenow="80"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              80%
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" col-lg-8 col-md-9">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="data-box">
+              <h4>بيان الأعمال</h4>
+              <ul class="data-results">
+                <li>
+                  <div class="chart chart-1" data-percent="100"></div>
+                  <p>الكل</p>
+                  <span>240</span>
+                </li>
+                <li>
+                  <div class="chart chart-2" data-percent="85"></div>
+                  <p>منتهية</p>
+                  <span>193</span>
+                </li>
+                <li>
+                  <div class="chart chart-3" data-percent="30"></div>
+                  <p>غير منتهية</p>
+                  <span>47</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="data-box">
+              <h4>بيان المشاريع</h4>
+              <ul class="data-results">
+                <li>
+                  <div class="chart chart-1" data-percent="100"></div>
+                  <p>الكل</p>
+                  <span>240</span>
+                </li>
+                <li>
+                  <div class="chart chart-2" data-percent="85"></div>
+                  <p>منتهية</p>
+                  <span>193</span>
+                </li>
+                <li>
+                  <div class="chart chart-3" data-percent="30"></div>
+                  <p>غير منتهية</p>
+                  <span>47</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="data-box">
+              <h4>بيان المهام</h4>
+              <ul class="data-results">
+                <li>
+                  <div class="chart chart-1" data-percent="100"></div>
+                  <p>الكل</p>
+                  <span>240</span>
+                </li>
+                <li>
+                  <div class="chart chart-2" data-percent="85"></div>
+                  <p>منتهية</p>
+                  <span>193</span>
+                </li>
+                <li>
+                  <div class="chart chart-3" data-percent="30"></div>
+                  <p>غير منتهية</p>
+                  <span>47</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="data-box">
+              <h4>بيان المواعيد</h4>
+              <ul class="data-results">
+                <li>
+                  <div class="chart chart-1" data-percent="100"></div>
+                  <p>الكل</p>
+                  <span>240</span>
+                </li>
+                <li>
+                  <div class="chart chart-2" data-percent="85"></div>
+                  <p>منتهية</p>
+                  <span>193</span>
+                </li>
+                <li>
+                  <div class="chart chart-3" data-percent="30"></div>
+                  <p>غير منتهية</p>
+                  <span>47</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12"></div>
+        </div>
+        <div class="evaluation-box">
+          <h3>التقييم الشهري</h3>
+          <img src="assets/images/rating-monthly.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
+</div>

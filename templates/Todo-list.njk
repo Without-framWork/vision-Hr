@@ -1,0 +1,62 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/partials/header.njk" %} {% include
+"templates/partials/sidebar.njk" %} {% include
+"templates/partials/notifications-list.njk" %}
+
+<div class="main-content">
+  <a class="btn-main btn-add" href="#">
+    <span><i class="fa fa-plus"></i> </span>
+    إضافة مهمة
+  </a>
+  <table class="table order-table table-responsive-sm">
+    <thead class="thead-light">
+      <tr>
+        <th class="frist-column" scope="col">نوع المهمة</th>
+        <th scope="col">موقع المهمة</th>
+        <th scope="col">الموظف</th>
+        <th scope="col">الوقت والتاريخ</th>
+        <th class="last-column" scope="col">التفاصيل</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">نوع المهمة</th>
+        <td>موقع المهمة</td>
+        <td>عمر القريقرى</td>
+        <td>25-10-2021 , 08:00 pm</td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">نوع المهمة</th>
+        <td>موقع المهمة</td>
+        <td>عمر القريقرى</td>
+        <td>25-10-2021 , 08:00 pm</td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">نوع المهمة</th>
+        <td>موقع المهمة</td>
+        <td>عمر القريقرى</td>
+        <td>25-10-2021 , 08:00 pm</td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">نوع المهمة</th>
+        <td>موقع المهمة</td>
+        <td>عمر القريقرى</td>
+        <td>25-10-2021 , 08:00 pm</td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  {% endblock %}
+</div>

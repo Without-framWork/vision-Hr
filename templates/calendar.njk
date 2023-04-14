@@ -1,0 +1,183 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/partials/header.njk" %} {% include
+"templates/partials/sidebar.njk" %} {% include
+"templates/partials/notifications-list.njk" %} {% include
+"templates/partials/notifications-list.njk" %}
+
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="item-body">
+        <div class="datapicker" id="datetimepicker13"></div>
+      </div>
+      <div class="item-body">
+        <h2>الأقسام</h2>
+        <ul class="achievement-colors">
+          <li>
+            <p class="projrct"></p>
+
+            المشاريع
+          </li>
+          <li>
+            <p class="appointment"></p>
+
+            المواعيد
+          </li>
+          <li>
+            <p class="tasks"></p>
+
+            المهام
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <div class="calender-body">
+        <h2>ديسمبر 2021</h2>
+
+        <table class="table table-bordered main-table">
+          <thead>
+            <tr>
+              <th class="frist-row" scope="col">
+                <i class="icon-calendar"></i>
+              </th>
+              <th scope="col">السبت</th>
+              <th scope="col">الاحد</th>
+              <th scope="col">الاثنين</th>
+              <th scope="col">الثلاثاء</th>
+              <th scope="col">الأربعاء</th>
+              <th scope="col">الخميس</th>
+              <th scope="col">الجمعة</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="frist-coulm" scope="row">00 :07</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <a href=""
+                  ><div class="sections-box projrct-time">
+                    <p>23 ديسمبر</p>
+                    تسليم مشروع تصميم البنيه التحتية لمخطط 675/ج/س
+                  </div></a
+                >
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="frist-coulm" scope="row">00 :08</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="frist-coulm" scope="row">00 :09</th>
+              <td></td>
+              <td>
+                <a href="">
+                  <div class="sections-box appointment-time">
+                    <p>00: 09</p>
+                    موعد مع عميل
+                  </div>
+                </a>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="frist-coulm" scope="row">00 :10</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="frist-coulm" scope="row">00 :11</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="frist-coulm" scope="row">00 :12</th>
+              <td></td>
+              <td></td>
+              <td>
+                <a href=""
+                  ><div class="sections-box tasks-time">
+                    <p>00 : 12</p>
+                    طباعة مخططات
+                  </div></a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="frist-coulm" scope="row">00 :01</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="frist-coulm" scope="row">00 :02</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="frist-coulm" scope="row">00 :03</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="frist-coulm" scope="row">00 :04</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,76 @@
+@import "utilities/__utilities.scss";
+@import "base/_base.scss";
+@import "components/__components.scss";
+@import "layout/__layout.scss";
+@import "pages/__pages.scss";
+@import "libraries/__libraries.scss";
+@import "plugins/__plugins.scss";
+@import "layout/_responsive.scss";
+
+.main-content {
+  margin-right: 90px;
+  margin-top: 100px;
+  padding: 100px;
+  overflow: hidden;
+  position: relative;
+ 
+}
+.main-content-mail {
+  margin-top: 200px;
+  padding: 0;
+  .order-table {
+    border-radius: 0;
+    .frist-column,
+    .last-column {
+      border-radius: 0;
+    }
+  }
+  .business-tab {
+    margin-right: 102px;
+  }
+}
+.search-filter {
+  margin-top: 90px;
+  margin-right: 90px;
+  margin-bottom: -165px;
+}
+.search-area {
+  background-color: #fafbfb;
+  padding: 50px 105px;
+
+  .btn-main {
+    margin: 35px 0;
+  }
+}
+.slider-content,.main-table,.ntf-menu {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.case-buttons {
+  .order-status {
+    display: inline-block;
+    margin-right: 30px;
+  }
+}
+.customer-data {
+  border: 0.5px solid $main-color;
+  border-radius: 10px;
+  margin: 0 102px;
+  padding: 30px 50px;
+  margin-bottom: 70px;
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    margin-left: 150px;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  span {
+    font-weight: 400;
+    margin-right: 15px;
+  }
+}

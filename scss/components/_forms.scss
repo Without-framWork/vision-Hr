@@ -1,0 +1,48 @@
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+
+  .form-control {
+    border-radius: 10px;
+    border: 1px solid $border-color  !important;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $main-color;
+    // margin-bottom: 35px;
+    &:focus {
+      // border-color: red;
+      outline: none;
+
+      border-color: $main-color;
+      box-shadow: $main-shadow;
+    }
+  }
+  label {
+    font-size: 20px;
+    color: $main-color;
+  }
+  span {
+    font-size: 16px;
+    font-weight: 500;
+    a {
+      color: $main-color;
+      float: right;
+    }
+  }
+  Select{
+    height: 50PX !important;
+
+  }
+}S
+
+textarea {
+  resize: none;
+}
+.form-textarea {
+  height: 150px !important;
+  padding: 20px 15px !important;
+}
+
+

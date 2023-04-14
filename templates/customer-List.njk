@@ -1,0 +1,59 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/partials/header.njk" %} {% include
+"templates/partials/sidebar.njk" %}
+{% include
+"templates/partials/notifications-list.njk" %}
+
+<div class="main-content">
+  <a class="btn-main btn-add" href="#">
+    <span><i class="fa fa-plus"></i> </span>
+    إضافة عميل
+  </a>
+  <table class="table order-table table-responsive-sm">
+    <thead class="thead-light">
+      <tr>
+        <th class="frist-column" scope="col">اسم العميل</th>
+        <th scope="col">رقم العميل</th>
+        <th scope="col">البريد الإلكتروني</th>
+        <th class="last-column" scope="col">التفاصيل</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">عمر القريقرى</th>
+        <td>0556772252</td>
+        <td>info@vision-dm2030.co</td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">عمر القريقرى</th>
+        <td>0556772252</td>
+        <td>info@vision-dm2030.co</td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">عمر القريقرى</th>
+        <td>0556772252</td>
+        <td>info@vision-dm2030.co</td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">عمر القريقرى</th>
+        <td>0556772252</td>
+        <td>info@vision-dm2030.co</td>
+        <td>
+          <a href="#"><i class="fa fa-external-link"></i> </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+{% endblock %}
+

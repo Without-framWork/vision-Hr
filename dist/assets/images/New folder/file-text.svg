@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="Group_68065" data-name="Group 68065" transform="translate(-30 -68)">
+    <rect id="Rectangle_4295" data-name="Rectangle 4295" width="28" height="28" transform="translate(30 68)" fill="none"/>
+    <g id="_015-file" data-name="015-file" transform="translate(33.701 69.713)">
+      <g id="Group_67370" data-name="Group 67370" transform="translate(0)">
+        <g id="Group_67369" data-name="Group 67369">
+          <path id="Path_4699" data-name="Path 4699" d="M47.623,6.873a.939.939,0,0,1-.939-.939V0H35.1a.9.9,0,0,0-.9.9V22.089a.9.9,0,0,0,.9.9h12.46a4,4,0,0,1-.286-.939,4.249,4.249,0,0,1,5.343-4.873,4.074,4.074,0,0,1,.469.16,4.28,4.28,0,0,1,.469.23V6.873ZM37.951,9.455H49.825a.469.469,0,1,1,0,.939H37.951a.469.469,0,0,1,0-.939Zm7.305,11.08H37.951a.469.469,0,0,1,0-.939h7.305a.469.469,0,0,1,0,.939ZM46.4,18H37.951a.469.469,0,0,1,0-.939H46.4a.469.469,0,0,1,0,.939Zm3.427-2.535H37.951a.469.469,0,0,1,0-.939H49.829a.469.469,0,0,1,0,.939Zm0-2.535H37.951a.469.469,0,0,1,0-.939H49.829a.469.469,0,0,1,0,.939Z" transform="translate(-34.2)" fill="#eaeaea"/>
+        </g>
+      </g>
+      <g id="Group_67372" data-name="Group 67372" transform="translate(13.423 0.765)">
+        <g id="Group_67371" data-name="Group 67371">
+          <path id="Path_4700" data-name="Path 4700" d="M262.92,13.04v5.15l4.324.014h.676Z" transform="translate(-262.92 -13.04)" fill="#eaeaea"/>
+        </g>
+      </g>
+      <g id="Group_67374" data-name="Group 67374" transform="translate(13.934 17.947)">
+        <g id="Group_67373" data-name="Group 67373">
+          <path id="Path_4701" data-name="Path 4701" d="M277.048,306.561a3.288,3.288,0,0,0-.939-.535,3.324,3.324,0,1,0,.939.535Zm.146,1.344-.014.018h0l-.127.16-.47.573-.469.573-.563.69-.385.47-.385.469a.457.457,0,0,1-.728-.014l-.352-.47-.352-.469-.728-.972a.469.469,0,0,1,.751-.564h0l1.07,1.408,1.69-2.07.343-.418a.469.469,0,0,1,.577-.075.44.44,0,0,1,.061.033A.469.469,0,0,1,277.194,307.9Z" transform="translate(-271.63 -305.818)" fill="#eaeaea"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

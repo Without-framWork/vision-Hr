@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_67965" data-name="Group 67965" transform="translate(-1395 -468)">
+    <rect id="Regular_1.5px_clock_background" data-name="Regular 1.5px/clock background" width="24" height="24" transform="translate(1395 468)" fill="none"/>
+    <g id="Group" transform="translate(1397 470)">
+      <path id="Combined_Shape" data-name="Combined Shape" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,1.5A8.5,8.5,0,1,0,18.5,10,8.509,8.509,0,0,0,10,1.5Z" fill="#072d4d"/>
+      <path id="Vector_479_Stroke_" data-name="Vector 479 (Stroke)" d="M1.5.75V5.336a.25.25,0,0,0,.073.177L3.78,7.72A.75.75,0,0,1,2.72,8.78L.513,6.573A1.75,1.75,0,0,1,0,5.336V.75a.75.75,0,0,1,1.5,0Z" transform="translate(9.25 4.25)" fill="#072d4d"/>
+    </g>
+  </g>
+</svg>

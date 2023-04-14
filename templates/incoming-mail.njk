@@ -1,0 +1,359 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "orders" %} {% include "templates/partials/header.njk" %} {% include
+"templates/partials/sidebar.njk" %} {# {% include
+"templates/partials/page-head.njk" %} #} {% include
+"templates/partials/page-head.njk" %}
+{% include
+"templates/partials/notifications-list.njk" %}
+
+<div class="main-content main-content-mail">
+  <div class="business-tab">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a
+          class="nav-link hvr-icon-bounce active"
+          id="tab-01"
+          data-toggle="tab"
+          href="#content-01"
+          role="tab"
+          aria-controls="content-01"
+          aria-selected="true"
+        >
+          {#
+          <img class="hvr-icon" src="assets/images/mail-icon.svg " alt="" /> #}
+          <i class="fa fa-envelope-o hvr-icon"></i>
+
+          صندوق المشاريع ( 4 )
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          class="nav-link hvr-icon-bounce"
+          id="tab-02"
+          data-toggle="tab"
+          href="#content-02"
+          role="tab"
+          aria-controls="content-02"
+          aria-selected="true"
+        >
+          <i class="fa fa-clock-o hvr-icon"></i>
+
+          طلبات المواعيد ( 2 )
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link hvr-icon-bounce"
+          id="tab-03"
+          data-toggle="tab"
+          href="#content-03"
+          role="tab"
+          aria-controls="content-03"
+          aria-selected="true"
+        >
+          <i class="fa fa-list-alt hvr-icon"></i>
+
+          صندوق المهام ( 5 )
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tab-content" id="myTabContent">
+    <div
+      class="tab-pane fade show active"
+      id="content-01"
+      role="tabpanel"
+      aria-labelledby="tab-01"
+    >
+      <table class="table order-table table-responsive-sm">
+        <thead class="thead-light">
+          <tr>
+            <th class="frist-column" scope="col">رقم العقد</th>
+            <th scope="col">اسم العميل</th>
+            <th scope="col">المرسل</th>
+            <th scope="col">درجه الاهمية</th>
+            <th scope="col">مراحل المعاملة</th>
+            <th class="last-column" scope="col">استعراض</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">CO23322114566</th>
+            <td>عمر القريقرى</td>
+            <td>سعد مشعل</td>
+            <td>
+              <a class="order-status reference-order order-status-md" href="#"
+                >متوسطه
+              </a>
+            </td>
+
+            <td>
+              <a href="#"><i class="fa fa-external-link"></i> </a>
+            </td>
+            <td>
+              <div class="case-buttons">
+                <a
+                  class="order-status success-order order-status-sm mr-0"
+                  href="#"
+                  >قبول
+                </a>
+                <a class="order-status cancel-order order-status-sm" href="#"
+                  >رفض
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">CO23322114566</th>
+            <td>عمر القريقرى</td>
+            <td>سعد مشعل</td>
+            <td>
+              <a class="order-status cancel-order order-status-md" href="#"
+                >مرتفعة
+              </a>
+            </td>
+            <td>
+              <a href="#"><i class="fa fa-external-link"></i> </a>
+            </td>
+            <td>
+              <div class="case-buttons">
+                <a
+                  class="order-status success-order order-status-sm mr-0"
+                  href="#"
+                  >قبول
+                </a>
+                <a class="order-status cancel-order order-status-sm" href="#"
+                  >رفض
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">CO23322114566</th>
+            <td>عمر القريقرى</td>
+            <td>سعد مشعل</td>
+            <td>
+              <a class="order-status success-order order-status-md" href="#"
+                >منخفضة
+              </a>
+            </td>
+            <td>
+              <a href="#"><i class="fa fa-external-link"></i> </a>
+            </td>
+            <td>
+              <div class="case-buttons">
+                <a
+                  class="order-status success-order order-status-sm mr-0"
+                  href="#"
+                  >قبول
+                </a>
+                <a class="order-status cancel-order order-status-sm" href="#"
+                  >رفض
+                </a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div
+      class="tab-pane fade"
+      id="content-02"
+      role="tabpanel"
+      aria-labelledby="tab-02"
+    >
+      <table class="table order-table table-responsive-sm">
+        <thead class="thead-light">
+          <tr>
+            <th class="frist-column" scope="col">رقم العقد</th>
+            <th scope="col">اسم العميل</th>
+            <th scope="col">المرسل</th>
+            <th scope="col">درجه الاهمية</th>
+            <th scope="col">مراحل المعاملة</th>
+            <th class="last-column" scope="col">استعراض</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">CO23322114566</th>
+            <td>عمر القريقرى</td>
+            <td>سعد مشعل</td>
+            <td>
+              <a class="order-status reference-order order-status-md" href="#"
+                >متوسطه
+              </a>
+            </td>
+
+            <td>
+              <a href="#"><i class="fa fa-external-link"></i> </a>
+            </td>
+            <td>
+              <div class="case-buttons">
+                <a
+                  class="order-status success-order order-status-sm mr-0"
+                  href="#"
+                  >قبول
+                </a>
+                <a class="order-status cancel-order order-status-sm" href="#"
+                  >رفض
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">CO23322114566</th>
+            <td>عمر القريقرى</td>
+            <td>سعد مشعل</td>
+            <td>
+              <a class="order-status cancel-order order-status-md" href="#"
+                >مرتفعة
+              </a>
+            </td>
+            <td>
+              <a href="#"><i class="fa fa-external-link"></i> </a>
+            </td>
+            <td>
+              <div class="case-buttons">
+                <a
+                  class="order-status success-order order-status-sm mr-0"
+                  href="#"
+                  >قبول
+                </a>
+                <a class="order-status cancel-order order-status-sm" href="#"
+                  >رفض
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">CO23322114566</th>
+            <td>عمر القريقرى</td>
+            <td>سعد مشعل</td>
+            <td>
+              <a class="order-status success-order order-status-md" href="#"
+                >منخفضة
+              </a>
+            </td>
+            <td>
+              <a href="#"><i class="fa fa-external-link"></i> </a>
+            </td>
+            <td>
+              <div class="case-buttons">
+                <a
+                  class="order-status success-order order-status-sm mr-0"
+                  href="#"
+                  >قبول
+                </a>
+                <a class="order-status cancel-order order-status-sm" href="#"
+                  >رفض
+                </a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="content-03"
+      role="tabpanel"
+      aria-labelledby="tab-03"
+    >
+      <table class="table order-table table-responsive-sm">
+        <thead class="thead-light">
+          <tr>
+            <th class="frist-column" scope="col">رقم العقد</th>
+            <th scope="col">اسم العميل</th>
+            <th scope="col">المرسل</th>
+            <th scope="col">درجه الاهمية</th>
+            <th scope="col">مراحل المعاملة</th>
+            <th class="last-column" scope="col">استعراض</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">CO23322114566</th>
+            <td>عمر القريقرى</td>
+            <td>سعد مشعل</td>
+            <td>
+              <a class="order-status reference-order order-status-md" href="#"
+                >متوسطه
+              </a>
+            </td>
+
+            <td>
+              <a href="#"><i class="fa fa-external-link"></i> </a>
+            </td>
+            <td>
+              <div class="case-buttons">
+                <a
+                  class="order-status success-order order-status-sm mr-0"
+                  href="#"
+                  >قبول
+                </a>
+                <a class="order-status cancel-order order-status-sm" href="#"
+                  >رفض
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">CO23322114566</th>
+            <td>عمر القريقرى</td>
+            <td>سعد مشعل</td>
+            <td>
+              <a class="order-status cancel-order order-status-md" href="#"
+                >مرتفعة
+              </a>
+            </td>
+            <td>
+              <a href="#"><i class="fa fa-external-link"></i> </a>
+            </td>
+            <td>
+              <div class="case-buttons">
+                <a
+                  class="order-status success-order order-status-sm mr-0"
+                  href="#"
+                  >قبول
+                </a>
+                <a class="order-status cancel-order order-status-sm" href="#"
+                  >رفض
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">CO23322114566</th>
+            <td>عمر القريقرى</td>
+            <td>سعد مشعل</td>
+            <td>
+              <a class="order-status success-order order-status-md" href="#"
+                >منخفضة
+              </a>
+            </td>
+            <td>
+              <a href="#"><i class="fa fa-external-link"></i> </a>
+            </td>
+            <td>
+              <div class="case-buttons">
+                <a
+                  class="order-status success-order order-status-sm mr-0"
+                  href="#"
+                  >قبول
+                </a>
+                <a class="order-status cancel-order order-status-sm" href="#"
+                  >رفض
+                </a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  {% endblock %}
+</div>

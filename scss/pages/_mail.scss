@@ -1,0 +1,43 @@
+.tab-body {
+  max-width: 800px;
+  ::placeholder {
+    font-size: 20px;
+    color: $main-color;
+  }
+  .form-textarea {
+    height: 230px !important;
+  }
+  .contract-image {
+    width: 100%;
+  }
+  h4 {
+    font-size: 20px;
+    color: rgba($color: $main-color, $alpha: 0.7);
+  }
+
+  label {
+    color: rgba($color: $main-color, $alpha: 0.7);
+  }
+  #accordion,
+  form {
+    width: 400px;
+  }
+
+  .stage-number {
+    padding: 5px 0;
+  }
+  .checkbox-area {
+    img {
+      float: left;
+    }
+    i{
+        font-size: 20px;
+
+    }
+    input[type="checkbox"]{
+        vertical-align: top;
+        margin-left: 20px;
+    }
+    
+  }
+}

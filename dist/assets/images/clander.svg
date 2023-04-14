@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="arrow-down-sign-to-navigate" transform="translate(1.902 -93.854)">
+    <g id="Group_67761" data-name="Group 67761">
+      <rect id="Rectangle_4250" data-name="Rectangle 4250" width="24" height="24" transform="translate(-1.902 93.854)" fill="none"/>
+      <g id="calendar" transform="translate(-5.21 96.154)">
+        <g id="Group_67762" data-name="Group 67762" transform="translate(5.988 0)">
+          <path id="Path_4762" data-name="Path 4762" d="M8.555,19.357H22.061a2.569,2.569,0,0,0,2.567-2.567V4a2.569,2.569,0,0,0-2.567-2.567H21.043V.717a.717.717,0,0,0-1.434,0v.717h-8.6V.717a.717.717,0,0,0-1.434,0v.717H8.555A2.569,2.569,0,0,0,5.988,4V16.79a2.569,2.569,0,0,0,2.567,2.567ZM7.422,4A1.135,1.135,0,0,1,8.555,2.868H9.573v.717a.717.717,0,1,0,1.434,0V2.868h8.6v.717a.717.717,0,0,0,1.434,0V2.868h1.018A1.135,1.135,0,0,1,23.194,4V6.094H7.422Zm0,3.527H23.194V16.79a1.135,1.135,0,0,1-1.133,1.133H8.555A1.135,1.135,0,0,1,7.422,16.79Z" transform="translate(-5.988 0)" fill="#072d4d"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

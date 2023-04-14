@@ -1,0 +1,104 @@
+.item-box {
+  border-radius: 10px;
+  box-shadow: $main-shadow;
+  padding: 45px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  i {
+    color: $main-color !important;
+    font-size: 30px;
+  }
+  .stage-number {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    margin-left: 0;
+    float: none;
+    margin-bottom: 0;
+    padding: 6px 0;
+    margin-left: 45px;
+  }
+  img {
+    margin-left: 20px;
+  }
+
+  h4 {
+    font-size: 26px;
+    color: $main-color;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .icon-file-text,
+  .icon-calendar,
+  .icon-cog,
+  .icon-envelope-open {
+    &:before {
+      margin-left: 20px;
+      color: $main-color;
+    }
+  }
+}
+.number-ntf,
+.item-title {
+  display: flex;
+  align-items: center;
+}
+
+.data-box {
+  border-radius: 15px;
+  padding: 50px;
+  box-shadow: $main-shadow;
+  //   margin-bottom: 40px;
+
+  h4 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: $main-color;
+  }
+}
+
+.data-results {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $main-color;
+  p {
+    color: $main-color;
+
+    font-size: 20px;
+  }
+  span {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  li {
+    width: 80px;
+    text-align: center;
+  }
+}
+
+.chart canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+.evaluation-box {
+  padding: 50px 90px;
+  box-shadow: $main-shadow;
+  border-radius: 10px;
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: $main-color;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}

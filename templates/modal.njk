@@ -1,0 +1,724 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/partials/sidebar.njk" %}
+<!-- {% include "templates/partials/header.njk" %} -->
+
+<div class="main-content">
+  <button
+    type="button"
+    class="btn-main"
+    data-toggle="modal"
+    data-target="#modal-1"
+  >
+    moadal#1
+  </button>
+  <button
+    type="button"
+    class="btn-main"
+    data-toggle="modal"
+    data-target="#modal-2"
+  >
+    moadal#2
+  </button>
+  <button
+    type="button"
+    class="btn-main"
+    data-toggle="modal"
+    data-target="#modal-3 "
+  >
+    moadal#3
+  </button>
+  <button
+    type="button"
+    class="btn-main"
+    data-toggle="modal"
+    data-target="#modal-4 "
+  >
+    moadal#4
+  </button>
+  <button
+    type="button"
+    class="btn-main"
+    data-toggle="modal"
+    data-target="#modal-5 "
+  >
+    moadal#5
+  </button>
+  <button
+    type="button"
+    class="btn-main"
+    data-toggle="modal"
+    data-target="#modal-6 "
+  >
+    moadal#6
+  </button>
+  <button
+    type="button"
+    class="btn-main"
+    data-toggle="modal"
+    data-target="#modal-7 "
+  >
+    moadal#7
+  </button>
+  <button
+    type="button"
+    class="btn-main"
+    data-toggle="modal"
+    data-target="#modal-8 "
+  >
+    moadal#8
+  </button>
+  <button
+    type="button"
+    class="btn-main"
+    data-toggle="modal"
+    data-target="#modal-9 "
+  >
+    moadal#9
+  </button>
+  <button
+    type="button"
+    class="btn-main"
+    data-toggle="modal"
+    data-target="#modal-10 "
+  >
+    moadal#10
+  </button>
+  <button
+    type="button"
+    class="btn-main"
+    data-toggle="modal"
+    data-target="#modal-11 "
+  >
+    moadal#11
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <h5 class="modal-title">طلب إجازة</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"
+            ><i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </button>
+
+        <div class="modal-body">
+          <form action="#">
+            <div class="form-group">
+              <label>نوع</label>
+
+              <input class="form-control" type="text" />
+            </div>
+            <div class="form-group">
+              <label>تاريخ </label>
+
+              <input class="form-control" type="text" />
+            </div>
+            <div class="form-group">
+              <label>عدد الأيام</label>
+
+              <input class="form-control" type="text" />
+            </div>
+            <div class="form-group">
+              <label>السبب</label>
+              <textarea class="form-control form-textarea"></textarea>
+            </div>
+          </form>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn-main btn-block">
+              إرسال الطلب
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="modal-2"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <h5 class="modal-title">إذن تأخير</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"
+            ><i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </button>
+
+        <div class="modal-body">
+          <form action="#">
+            <div class="form-group">
+              <label>تاريخ </label>
+
+              <input class="form-control" type="text" />
+            </div>
+            <div class="form-group">
+              <label>عدد الساعات </label>
+
+              <input class="form-control" type="text" />
+            </div>
+
+            <div class="form-group">
+              <label>السبب</label>
+              <textarea class="form-control form-textarea"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-main btn-block">إرسال الطلب</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-3" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <h5 class="modal-title">إذن تأخير</h5>
+
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"
+            ><i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </button>
+
+        <div class="modal-body">
+          <h4>سبب الإذن</h4>
+          <p>
+            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
+            القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في
+            الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي
+            توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى
+            نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-4" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <h5 class="modal-title">طلب عهدة</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"
+            ><i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </button>
+
+        <div class="modal-body">
+          <form action="#">
+            <div class="form-group">
+              <label>المبلغ</label>
+
+              <input class="form-control" type="text" />
+            </div>
+
+            <div class="form-group">
+              <label>السبب</label>
+              <textarea class="form-control form-textarea"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-main btn-block">إرسال الطلب</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-5" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <h5 class="modal-title">طلب سلفة</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"
+            ><i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </button>
+
+        <div class="modal-body">
+          <form action="#">
+            <div class="form-group">
+              <label>المبلغ</label>
+
+              <input class="form-control" type="text" />
+            </div>
+
+            <div class="form-group">
+              <label>السبب</label>
+              <textarea class="form-control form-textarea"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-main btn-block">
+                إرسال الطلب
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="modal-6"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <h5 class="modal-title">تقديم تظلم</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"
+            ><i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </button>
+
+        <div class="modal-body">
+          <form action="#">
+            <div class="form-group">
+              <label>العنوان</label>
+
+              <input class="form-control" type="text" />
+            </div>
+
+            <div class="form-group">
+              <label>التفاصيل</label>
+              <textarea class="form-control form-textarea"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-main btn-block">
+                إرسال الطلب
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="modal-7"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <h5 class="modal-title">تقديم نموذج</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"
+            ><i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </button>
+
+        <div class="modal-body">
+          <form action="#">
+            <div class="form-group">
+              <label>العنوان</label>
+
+              <input class="form-control" type="text" />
+            </div>
+
+            <div class="form-group">
+              <label>التفاصيل</label>
+              <textarea class="form-control form-textarea"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-main btn-block">
+                إرسال الطلب
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="modal-8"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <h5 class="modal-title">تفاصيل العهدة</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"
+            ><i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </button>
+
+        <div class="modal-body">
+          <ol>
+            <li>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى</li>
+            <li>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى</li>
+            <li>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى</li>
+            <li>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى</li>
+            <li>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="modal-9"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <h5 class="modal-title">تفاصيل عقد العمل</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"
+            ><i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </button>
+
+        <div class="modal-body">
+          <img src="assets/images/contract.png" alt="cintract-image" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="modal-10"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <h5 class="modal-title">مراحل المعاملة</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"
+            ><i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </button>
+
+        <div class="modal-body">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-accordion"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <i class="rotate-icon fa fa-angle-down"></i>
+                    المرحلة الأولي
+                    <p class="stage-number">1</p>
+                  </button>
+                </h5>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                  الفقرات في الصفحة التي يقرأها.
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 80%"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      80%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-accordion collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <i class="rotate-icon fa fa-angle-down"></i>
+                    المرحلة الثانية
+                    <p class="stage-number">2</p>
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                  الفقرات في الصفحة التي يقرأها.
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 80%"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      80%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-accordion collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <i class="rotate-icon fa fa-angle-down"></i>
+                    المرحلة الثالثة
+                    <p class="stage-number">3</p>
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                  الفقرات في الصفحة التي يقرأها.
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 80%"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      80%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingfour">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-accordion collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapsefour"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <i class="rotate-icon fa fa-angle-down"></i>
+                    المرحلة الرابعة
+                    <p class="stage-number">4</p>
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapsefour"
+                class="collapse"
+                aria-labelledby="headingfour"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                  الفقرات في الصفحة التي يقرأها.
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 80%"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      80%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingfive">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-accordion collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapsefive"
+                    aria-expanded="false"
+                    aria-controls="collapsefive"
+                  >
+                    <i class="rotate-icon fa fa-angle-down"></i>
+                    المرحلة الخامسة
+                    <p class="stage-number">5</p>
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapsefive"
+                class="collapse"
+                aria-labelledby="headingfive"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                  الفقرات في الصفحة التي يقرأها.
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 80%"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      80%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="modal-11"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <h5 class="modal-title">طلب عهدة</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"
+            ><i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </button>
+
+        <div class="modal-body">
+          <form action="#">
+            <div class="checkbox-area">
+              <div class="checkbox">
+                <input type="checkbox" id="ch1" checked="checked" />
+                <label> مركبة </label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="ch2" />
+                <label>جرار </label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="ch3" />
+                <label> جريدر </label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="ch4" />
+                <label> خلاطة </label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-main btn-block">
+                تسليم العهدة
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
+</div>

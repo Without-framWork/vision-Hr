@@ -1,0 +1,159 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "orders" %} {% include "templates/partials/header.njk" %} {% include
+"templates/partials/sidebar.njk" %}
+  {% include "templates/partials/page-head.njk" %}
+  {% include
+"templates/partials/notifications-list.njk" %}
+
+<div class="main-content">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a
+        class="nav-link active"
+        id="tab-01"
+        data-toggle="tab"
+        href="#content-01"
+        role="tab"
+        aria-controls="content-01"
+        aria-selected="true"
+      >
+        تفاصيل المهمة
+      </a>
+    </li>
+
+  
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="tab-02"
+        data-toggle="tab"
+        href="#content-02"
+        role="tab"
+        aria-controls="content-02"
+        aria-selected="true"
+        >المرفقات
+      </a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div
+      class="tab-pane fade show active"
+      id="content-01"
+      role="tabpanel"
+      aria-labelledby="tab-01"
+    >
+      <div class="tab-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>اسم العميل </label>
+
+              <input
+                class="form-control"
+                type="text"
+                placeholder="عمر القريقرى"
+              />
+            </div>
+            <div class="form-group">
+              <label> المرسل </label>
+
+              <input class="form-control" type="text" placeholder="سعد مشعل" />
+            </div>
+            <div class="form-group">
+              <label> تاريخ التسليم </label>
+
+              <input
+                class="form-control"
+                type="text"
+                placeholder="29-10-2021"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>رقم العميل </label>
+
+              <input
+                class="form-control"
+                type="text"
+                placeholder="0538500542"
+              />
+            </div>
+            <div class="form-group">
+              <label>تاريخ الاستلام </label>
+
+              <input
+                class="form-control"
+                type="text"
+                placeholder="20-10-2021"
+              />
+            </div>
+            <div class="form-group">
+              <label> درجة الأهمية </label>
+
+              <input class="form-control" type="text" placeholder="مرتفعة " />
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>الملاحظات</label>
+              <textarea
+                class="form-control form-textarea"
+                placeholder="هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام يوجد محتوى نصي، هنا يوجد محتوى  فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div
+      class="tab-pane fade"
+      id="content-02"
+      role="tabpanel"
+      aria-labelledby="tab-02"
+    >
+      <div class="tab-body">
+        <form action="#">
+          <div class="checkbox-area">
+            <div class="checkbox">
+              <input type="checkbox" id="ch1" checked="checked" />
+              <i class="fa fa-file"></i>
+
+              <label> ملف المشروع </label>
+              <a href="#"> <img src="assets/images/download.svg" alt="" /> </a>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="ch2" />
+              <i class="fa fa-file"></i>
+
+              <label>ملف المشروع </label>
+              <a href="#"> <img src="assets/images/download.svg" alt="" /> </a>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="ch3" />
+              <i class="fa fa-file"></i>
+
+              <label> ملف المشروع </label>
+              <a href="#"> <img src="assets/images/download.svg" alt="" /> </a>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="ch4" />
+              <i class="fa fa-file"></i>
+
+              <label> ملف المشروع </label>
+              <a href="#"> <img src="assets/images/download.svg" alt="" /> </a>
+            </div>
+          </div>
+          <button type="button" class="btn-main btn-block">
+            تحميل الملفات
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

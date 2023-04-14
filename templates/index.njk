@@ -1,0 +1,138 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/partials/header.njk" %} {% include
+"templates/partials/sidebar.njk" %} {% include
+"templates/partials/page-head.njk" %} {% include
+"templates/partials/notifications-list.njk" %}
+
+
+<div class="main-content">
+  <div class="row">
+    <div class="col-lg-3 col-md-6">
+      <div class="item-box hvr-float">
+        <div class="item-title">
+          <i class="icon-envelope-open hvr-icon"></i>
+          <h4>البريد الوارد</h4>
+        </div>
+        <div class="number-ntf">
+          <p class="stage-number">3</p>
+          <a href="">
+            <i class="fa fa-angle-left"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="item-box hvr-float">
+        <div class="item-title">
+          <i class="icon-file-text hvr-icon"></i>
+
+          <h4>أعمالي</h4>
+        </div>
+        <div class="number-ntf">
+          <p class="stage-number">2</p>
+          <a href="">
+            <i class="fa fa-angle-left"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="item-box hvr-float">
+        <div class="item-title">
+          <i class="icon-calendar hvr-icon"></i>
+
+          <h4>التقويم</h4>
+        </div>
+        <div class="number-ntf">
+          <p class="stage-number">5</p>
+          <a href="">
+            <i class="fa fa-angle-left"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="item-box hvr-float">
+        <div class="item-title">
+          <i class="icon-cog hvr-icon"></i>
+          <h4>الخدمات</h4>
+        </div>
+        <div class="number-ntf">
+          <p class="stage-number">0</p>
+          <a href="">
+            <i class="fa fa-angle-left"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-carousel owl-carousel owl-theme">
+    <div class="data-box">
+      <h4>بيان الأعمال</h4>
+      <ul class="data-results">
+        <li>
+          <div class="chart chart-1" data-percent="100"></div>
+          <p>الكل</p>
+          <span>240</span>
+        </li>
+        <li>
+          <div class="chart chart-2" data-percent="85"></div>
+          <p>منتهية</p>
+          <span>193</span>
+        </li>
+        <li>
+          <div class="chart chart-3" data-percent="30"></div>
+          <p>غير منتهية</p>
+          <span>47</span>
+        </li>
+      </ul>
+    </div>
+    <div class="data-box">
+      <h4>بيان المشاريع</h4>
+      <ul class="data-results">
+        <li>
+          <div class="chart chart-1" data-percent="100"></div>
+          <p>الكل</p>
+          <span>240</span>
+        </li>
+        <li>
+          <div class="chart chart-2" data-percent="85"></div>
+          <p>منتهية</p>
+          <span>193</span>
+        </li>
+        <li>
+          <div class="chart chart-3" data-percent="30"></div>
+          <p>غير منتهية</p>
+          <span>47</span>
+        </li>
+      </ul>
+    </div>
+    <div class="data-box">
+      <h4>بيان المهام</h4>
+      <ul class="data-results">
+        <li>
+          <div class="chart chart-1" data-percent="100"></div>
+          <p>الكل</p>
+          <span>240</span>
+        </li>
+        <li>
+          <div class="chart chart-2" data-percent="85"></div>
+          <p>منتهية</p>
+          <span>193</span>
+        </li>
+        <li>
+          <div class="chart chart-3" data-percent="30"></div>
+          <p>غير منتهية</p>
+          <span>47</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="evaluation-box">
+    <h3>التقييم الشهري</h3>
+    <img src="assets/images/rating-monthly.png" alt="" />
+  </div>
+</div>
+
+{% endblock %}

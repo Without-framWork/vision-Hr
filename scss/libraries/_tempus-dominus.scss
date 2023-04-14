@@ -1,0 +1,41 @@
+.next,
+.prev {
+  transform: rotateY(180deg);
+}
+.input-group > .form-control:not(:last-child) {
+  border-radius: 10px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  width: 100%;
+}
+
+//clander-style
+.datapicker{
+  .table-sm{
+    thead{
+      tr{
+        position: relative;
+       
+      }
+      th{
+        border: 0;
+      }
+   
+     
+      // .prev{
+      //   // background-color: red;
+      //   border: 0;
+      //   position: absolute;
+      //   left: 40px;
+      //   line-height: 20px;
+      // }
+    }
+   
+  }
+  // .picker-switch{
+  //   text-align: right;
+  // }
+
+}
+
+// table thead tr:first-child th {

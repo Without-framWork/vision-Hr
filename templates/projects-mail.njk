@@ -1,0 +1,424 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "orders" %} {% include "templates/partials/header.njk" %} {% include
+"templates/partials/sidebar.njk" %} {% include
+"templates/partials/page-head.njk" %}
+{% include
+"templates/partials/notifications-list.njk" %}
+
+<div class="main-content">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a
+        class="nav-link active"
+        id="tab-01"
+        data-toggle="tab"
+        href="#content-01"
+        role="tab"
+        aria-controls="content-01"
+        aria-selected="true"
+      >
+        تفاصيل المشروع
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="tab-02"
+        data-toggle="tab"
+        href="#content-02"
+        role="tab"
+        aria-controls="content-02"
+        aria-selected="true"
+        >العقد
+      </a>
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="tab-3"
+        data-toggle="tab"
+        href="#content-03"
+        role="tab"
+        aria-controls="content-03"
+        aria-selected="true"
+        >المراحل
+      </a>
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="tab-04"
+        data-toggle="tab"
+        href="#content-04"
+        role="tab"
+        aria-controls="content-04"
+        aria-selected="true"
+        >المرفقات
+      </a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div
+      class="tab-pane fade show active"
+      id="content-01"
+      role="tabpanel"
+      aria-labelledby="tab-01"
+    >
+      <div class="tab-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>اسم العميل </label>
+
+              <input
+                class="form-control"
+                type="text"
+                placeholder="عمر القريقرى"
+              />
+            </div>
+            <div class="form-group">
+              <label> المرسل </label>
+
+              <input class="form-control" type="text" placeholder="سعد مشعل" />
+            </div>
+            <div class="form-group">
+              <label> تاريخ التسليم </label>
+
+              <input
+                class="form-control"
+                type="text"
+                placeholder="29-10-2021"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>رقم العميل </label>
+
+              <input
+                class="form-control"
+                type="text"
+                placeholder="0538500542"
+              />
+            </div>
+            <div class="form-group">
+              <label>تاريخ الاستلام </label>
+
+              <input
+                class="form-control"
+                type="text"
+                placeholder="20-10-2021"
+              />
+            </div>
+            <div class="form-group">
+              <label> درجة الأهمية </label>
+
+              <input class="form-control" type="text" placeholder="مرتفعة " />
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>الملاحظات</label>
+              <textarea
+                class="form-control form-textarea"
+                placeholder="هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام يوجد محتوى نصي، هنا يوجد محتوى  فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="content-02"
+      role="tabpanel"
+      aria-labelledby="tab-02"
+    >
+      <div class="tab-body">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>رقم العقد</h4>
+            <img
+              class="contract-image"
+              src="assets/images/contract.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6">
+            <h4>نوع العقد</h4>
+            <img
+              class="contract-image"
+              src="assets/images/contract.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="content-03"
+      role="tabpanel"
+      aria-labelledby="tab-03"
+    >
+      <div class="tab-body">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-accordion"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <i class="rotate-icon fa fa-angle-down"></i>
+                  المرحلة الأولي
+                  <p class="stage-number">1</p>
+                </button>
+              </h5>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                الفقرات في الصفحة التي يقرأها.
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    80%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-accordion collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <i class="rotate-icon fa fa-angle-down"></i>
+                  المرحلة الثانية
+                  <p class="stage-number">2</p>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                الفقرات في الصفحة التي يقرأها.
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    80%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-accordion collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="rotate-icon fa fa-angle-down"></i>
+                  المرحلة الثالثة
+                  <p class="stage-number">3</p>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                الفقرات في الصفحة التي يقرأها.
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    80%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingfour">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-accordion collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapsefour"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="rotate-icon fa fa-angle-down"></i>
+                  المرحلة الرابعة
+                  <p class="stage-number">4</p>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapsefour"
+              class="collapse"
+              aria-labelledby="headingfour"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                الفقرات في الصفحة التي يقرأها.
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    80%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingfive">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-accordion collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapsefive"
+                  aria-expanded="false"
+                  aria-controls="collapsefive"
+                >
+                  <i class="rotate-icon fa fa-angle-down"></i>
+                  المرحلة الخامسة
+                  <p class="stage-number">5</p>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapsefive"
+              class="collapse"
+              aria-labelledby="headingfive"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                الفقرات في الصفحة التي يقرأها.
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    80%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="content-04"
+      role="tabpanel"
+      aria-labelledby="tab-04"
+    >
+      <div class="tab-body">
+        <form action="#">
+          <div class="checkbox-area">
+            <div class="checkbox">
+              <input type="checkbox" id="ch1" checked="checked" />
+              <i class="fa fa-file"></i>
+
+              <label> ملف المشروع </label>
+              <a href="#"> <img src="assets/images/download.svg" alt="" /> </a>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="ch2" />
+              <i class="fa fa-file"></i>
+
+              <label>ملف المشروع </label>
+              <a href="#"> <img src="assets/images/download.svg" alt="" /> </a>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="ch3" />
+              <i class="fa fa-file"></i>
+
+              <label> ملف المشروع </label>
+              <a href="#"> <img src="assets/images/download.svg" alt="" /> </a>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="ch4" />
+              <i class="fa fa-file"></i>
+
+              <label> ملف المشروع </label>
+              <a href="#"> <img src="assets/images/download.svg" alt="" /> </a>
+            </div>
+          </div>
+          <button type="button" class="btn-main btn-block">
+            تحميل الملفات
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,167 @@
+.modal-xl {
+  max-width: 700px;
+}
+
+.modal-content {
+  border-radius: 15px;
+  padding: 50px;
+}
+.modal-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: $main-color;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.close {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  opacity: 1;
+
+  i {
+    font-size: 20px;
+    color: $red-color;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+.modal-footer {
+  border: 0;
+  justify-content: center;
+  padding: 0;
+}
+.modal-body {
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    color: $blue-color;
+  }
+  h4 {
+    font-size: 22px;
+    color: $main-color;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: $black-color;
+    span {
+      font-size: 16px;
+      font-weight: 300;
+      color: #8b8b97;
+      margin-left: 10px;
+    }
+  }
+  ol {
+    li {
+      font-size: 18px;
+      color: $blue-color;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+.btn-accordion {
+  color: $main-color;
+  font-size: 20px;
+  background-color: transparent;
+  width: 100%;
+  text-align: right;
+  i {
+    float: left;
+    font-size: 20px;
+    color: $main-color;
+    padding: 6px 0;
+    font-weight: bold;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+  &:not(.collapsed) {
+    .rotate-icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+.card-header {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid $gray-grade-other;
+}
+
+.card {
+  border: 0;
+}
+.card-body {
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba($color: $main-color, $alpha: 0.7);
+}
+.stage-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba($color: $orange-color, $alpha: 0.1);
+  text-align: center;
+  color: $orange-color !important  ;
+  float: right;
+  margin-left: 20px;
+  // padding: 5px 0;
+}
+.progress {
+  height: 25px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.progress-bar {
+  background-color: $orange-color;
+  font-size: 18px;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: 1px solid $main-color;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 3px;
+  position: relative;
+  vertical-align: middle;
+
+  &::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    top: 0;
+  }
+}
+
+input[type="checkbox"]:checked::before {
+  border-right: 3px solid $main-color;
+  border-top: 3px solid $main-color;
+  height: 35%;
+  width: 62%;
+  transform: rotate(130deg) translateY(18%) translateX(-14%);
+}
+.checkbox {
+  padding: 20px 0;
+  border-bottom: 1px solid #eaeaea;
+  label {
+    font-size: 18px;
+    color: $main-color;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+.checkbox-area {
+  margin-bottom: 50px;
+}
+

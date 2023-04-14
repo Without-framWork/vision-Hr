@@ -1,0 +1,126 @@
+.header {
+  height: 90px;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+.header-content {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  .icon-ntf {
+    color: #00488f;
+  }
+
+  // overflow: hidden;
+  height: 90px;
+  padding: 20px 100px;
+  .search-form {
+    padding: 12px 0;
+    input {
+      background: #f8f9fa;
+      display: inline-block;
+      padding: 0 20px;
+      height: 36px;
+      border: 1px solid #dee2e6;
+      display: inline-block;
+      width: 450px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.navbar-left {
+  float: left;
+  line-height: 50px;
+}
+.user-icons {
+  display: inline-block;
+  position: relative;
+  // margin-left: 80px;
+  .user-icon {
+    i {
+      font-size: 24px;
+      // color: #727272;
+    }
+    &.user-ntf {
+      margin-left: 40px;
+      i {
+        margin-left: 5px;
+      }
+     
+    }
+  }
+}
+
+
+.user-avatar {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  line-height: 50px;
+  margin-right: 80px;
+
+  &:hover {
+    .user-menu {
+      display: block;
+      li {
+        line-height: 24px;
+      }
+    }
+  }
+
+  img {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  span {
+    font-size: 20px;
+    color: $main-color;
+  }
+}
+.mail-icon {
+  cursor: pointer;
+}
+.user-menu {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  list-style: none;
+  background: #fff;
+  left: 0;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  z-index: 999;
+  padding: 15px 0;
+  top: 60px;
+  li {
+    padding: 10px 20px;
+    a {
+      color: #000814;
+    }
+    &:hover {
+      cursor: pointer;
+      background: #003566;
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.badge {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $red-color;
+  position: absolute !important;
+  top: 8px;
+  right: -1px;
+}
+.badge:empty {
+  display: block;
+}

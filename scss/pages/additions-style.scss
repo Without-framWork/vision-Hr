@@ -1,0 +1,99 @@
+.add-page {
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: $orange-color;
+    margin-bottom: 50px;
+  }
+  .btn-main {
+    margin-top: 70px;
+  }
+  label {
+    color: rgba($color: $main-color, $alpha: 0.7);
+  }
+  .form-textarea {
+    height: 170px !important;
+  }
+}
+
+.choose-image {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  h6 {
+    font-size: 20px;
+    color: rgba($color: $main-color, $alpha: 0.7);
+    text-align: right;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+}
+
+.picture {
+  max-width: 380px;
+  height: 170px;
+  border: 1px solid $border-color;
+  color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.select-image {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  p {
+    font-size: 20px;
+    color: rgba($color: $main-color, $alpha: 0.7);
+  }
+}
+.section-infor {
+  margin-bottom: 70px;
+  h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: $main-color;
+  }
+  .choose-image {
+    margin-bottom: 22px;
+  }
+}
+.input-group-text {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 10px;
+  left: 6px;
+}
+
+//data-picker
+
+.btn-great {
+  background-color: $blue-color;
+  &:hover {
+    border-color: $blue-color;
+    color: $blue-color;
+  }
+}
+.btn-delete{
+  padding: 15px;
+  background-color: $red-color;
+  border-radius: 10px;
+  border: 0;
+  color: $white-color;
+  i{
+    font-size: 20px;
+  }
+  &:focus{
+    outline: 0;
+
+
+  }
+
+}

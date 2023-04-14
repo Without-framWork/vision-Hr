@@ -1,0 +1,385 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/partials/header.njk" %} {% include
+"templates/partials/sidebar.njk" %}
+{% include
+"templates/partials/notifications-list.njk" %}
+
+<div class="main-content">
+  <div class="add-page">
+    <form action="#">
+      <h1>إضافة مشروع</h1>
+      <div class="section-infor">
+        <h4>بيانات المشروع</h4>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="form-group">
+              <label> رقم الهوية </label>
+
+              <input class="form-control" type="text" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="form-group">
+              <label> اسم الموظف </label>
+              <select class="form-control">
+                <option>حدد المحافظة</option>
+                <option>مشكلة 2</option>
+                <option>مشكلة 3</option>
+                <option>مشكلة 4</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="form-group">
+              <label> رقم الهوية </label>
+
+              <input class="form-control" type="text" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="form-group">
+              <label> رقم الهوية </label>
+
+              <input class="form-control" type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-infor">
+        <h4>المخطط التقسيمي</h4>
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="choose-image">
+                  <h6>صورة</h6>
+                  <div class="picture">
+                    <img src="assets/images/download.jpg" alt="picture" />
+                  </div>
+                  <div class="select-image">
+                    <p>لتحميل الصورة اضغط هنا</p>
+                    <span class="upload-icon">
+                      <img
+                        src="assets/images/upload-icon.svg"
+                        alt="icon-image"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="choose-image">
+                  <h6>صورة</h6>
+                  <div class="picture">
+                    <img src="assets/images/download.jpg" alt="picture" />
+                  </div>
+                  <div class="select-image">
+                    <p>لتحميل الصورة اضغط هنا</p>
+                    <span class="upload-icon">
+                      <img src="assets/images/upload-icon.svg" alt="picture" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-infor">
+        <h4>الخارطة الزمنية للمشروع</h4>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="form-group">
+              <label> بداية المشروع </label>
+
+              <div
+                class="input-group date calendar data-7"
+                data-target-input="nearest"
+              >
+                <input
+                  type="text"
+                  class="form-control datetimepicker-input"
+                  data-target=".data-7"
+                />
+                <div
+                  class="input-group-append"
+                  data-target=".data-7"
+                  data-toggle="datetimepicker"
+                >
+                  <div class="input-group-text">
+                    <img src="assets/images/clander.svg" alt="icon-image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label> نهاية المشروع </label>
+
+              <div
+                class="input-group date calendar data-8"
+                data-target-input="nearest"
+              >
+                <input
+                  type="text"
+                  class="form-control datetimepicker-input"
+                  data-target=".data-8"
+                />
+                <div
+                  class="input-group-append"
+                  data-target=".data-8"
+                  data-toggle="datetimepicker"
+                >
+                  <div class="input-group-text">
+                    <img src="assets/images/clander.svg" alt="icon-image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="form-group">
+              <label> النسبه </label>
+
+              <input class="form-control" type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-infor">
+        <h4>نسب انجاز الأعمال بأمانه جدة</h4>
+        <form action="#" class="repeater">
+          <div class="row">
+            <div class="col-md-12">
+              <div data-repeater-list="outer-group" class="outer row">
+                <div data-repeater-item="" class="outer col-md-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label> الاسم </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label> النسبه </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    data-repeater-delete=""
+                    type="button"
+                    class="btn-delete"
+                  >
+                    <i class="fa fa-trash-o"></i>
+                  </button>
+                </div>
+              </div>
+
+              <button
+                data-repeater-create=""
+                type="button"
+                class="btn-main btn-great"
+              >
+                <i class="fa fa-plus"></i>
+
+                إضافة
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="section-infor">
+        <h4>نسب انجاز الأعمال بالجهات الخدمية</h4>
+        <form action="#" class="repeater">
+          <div class="row">
+            <div class="col-md-12">
+              <div data-repeater-list="outer-group" class="outer row">
+                <div data-repeater-item="" class="outer col-md-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label> الاسم </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label> النسبه </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    data-repeater-delete=""
+                    type="button"
+                    class="btn-delete"
+                  >
+                    <i class="fa fa-trash-o"></i>
+                  </button>
+                </div>
+              </div>
+
+              <button
+                data-repeater-create=""
+                type="button"
+                class="btn-main btn-great"
+              >
+                <i class="fa fa-plus"></i>
+
+                إضافة
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="section-infor">
+        <h4>أرقام المعاملات لدى أمانه جدة وحالتها</h4>
+        <form action="#" class="repeater">
+          <div class="row">
+            <div class="col-md-12">
+              <div data-repeater-list="outer-group" class="outer row">
+                <div data-repeater-item="" class="outer col-md-9">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label> المعاملة </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label> الرقم </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label> الحالة </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    data-repeater-delete=""
+                    type="button"
+                    class="btn-delete"
+                  >
+                    <i class="fa fa-trash-o"></i>
+                  </button>
+                </div>
+              </div>
+
+              <button
+                data-repeater-create=""
+                type="button"
+                class="btn-main btn-great"
+              >
+                <i class="fa fa-plus"></i>
+
+                إضافة
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="section-infor mb-0">
+        <h4>جدول جميع المعاملات الأخرى وحالتها</h4>
+        <form action="#" class="repeater">
+          <div class="row">
+            <div class="col-md-12">
+              <div data-repeater-list="outer-group" class="outer row">
+                <div data-repeater-item="" class="outer col-md-12">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label> المعاملة </label>
+
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label> الحاله </label>
+
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label> اسم الموظف </label>
+                        <select class="form-control">
+                          <option>حدد المحافظة</option>
+                          <option>مشكلة 2</option>
+                          <option>مشكلة 3</option>
+                          <option>مشكلة 4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label> تاريخ التسليم </label>
+
+                        <div
+                          class="input-group date calendar data-9"
+                          data-target-input="nearest"
+                        >
+                          <input
+                            type="text"
+                            class="form-control datetimepicker-input"
+                            data-target=".data-9"
+                          />
+                          <div
+                            class="input-group-append"
+                            data-target=".data-9"
+                            data-toggle="datetimepicker"
+                          >
+                            <div class="input-group-text">
+                              <img
+                                src="assets/images/clander.svg"
+                                alt="icon-image"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    data-repeater-delete=""
+                    type="button"
+                    class="btn-delete"
+                  >
+                    <i class="fa fa-trash-o"></i>
+                  </button>
+                </div>
+              </div>
+
+              <button
+                data-repeater-create=""
+                type="button"
+                class="btn-main btn-great"
+              >
+                <i class="fa fa-plus"></i>
+
+                إضافة
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <button type="submit" class="btn-main btn-xl">حفظ</button>
+    </form>
+  </div>
+
+  {% endblock %}
+</div>

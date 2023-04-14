@@ -1,0 +1,102 @@
+.project-box {
+  border: 1px solid $border-color;
+  padding: 50px;
+  border-radius: 10px;
+  height: 100%;
+  ul {
+    list-style: none;
+  }
+  li {
+    font-size: 22px;
+    color: $blue-color;
+    font-weight: 400;
+    margin-bottom: 20px;
+    span {
+      margin-right: 15px;
+    }
+  }
+  h5 {
+    font-size: 22px;
+    font-weight: bold;
+    color: $main-color;
+  }
+  .progress-bar {
+    background: $blue-color;
+  }
+  .progress {
+    margin-top: 40px;
+    background-color: transparent;
+    border: 1px solid $blue-color;
+  }
+}
+.achievement-colors {
+  li {
+    width: 112px;
+  }
+  p {
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: $blue-color;
+    float: left;
+    margin: 8px 0;
+  }
+  .residual {
+    background-color: #d7d7d7;
+  }
+}
+.division-chart {
+  padding: 135px 0 70px 0;
+  IMG{
+    width: 100%;
+  }
+}
+.project-accordion {
+  .btn-accordion {
+    font-size: 22px;
+    font-weight: bold;
+    i {
+      float: right;
+      margin-left: 30px;
+    }
+    &:not(.collapsed) {
+      .rotate-icon {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  .card-header {
+    border-bottom: 0;
+  }
+  .card {
+    margin-bottom: 70px;
+    background-color: rgba($color: $border-color, $alpha: 0.1);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  .order-table {
+    tbody {
+      tr {
+        background-color: $white-color;
+      }
+    }
+  }
+}
+.achievement-percent {
+  margin-bottom: 40px;
+  p {
+    // float: right;
+    // margin-left: 80px;
+    font-size: 20px;
+    color: $blue-color;
+  }
+  .progress {
+    max-width: 415px;
+    margin-top: 0;
+    background-color: transparent;
+    border: 1px solid $blue-color;
+  }
+  .progress-bar {
+    background-color: $blue-color;
+  }
+}

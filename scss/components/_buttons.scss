@@ -1,0 +1,74 @@
+.btn-main {
+  font-size: 20px;
+  // font-weight: 600;
+  line-height: 50px;
+  height: 50px;
+  padding: 0 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  color: #fff;
+  border: 1px solid $main-color;
+  border-radius: 10px;
+  background: $main-color;
+  &:hover {
+    color: $main-color;
+    border-color: $main-color;
+    outline: none;
+    background: #fff;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+  &:focus {
+    outline: none;
+  }
+  span {
+    margin-left: 10px;
+  }
+  i{
+    font-size: 20px;
+  }
+}
+
+.btn-close {
+  background-color: $dark-gray;
+  border-color: $dark-gray;
+  margin-right: 30px;
+  &:hover {
+    color: $dark-gray;
+    border-color: $dark-gray;
+  }
+}
+.btn-success {
+  background-color: rgba($color: $green-color, $alpha: 0.1);
+  color: $green-color;
+  border-color: $green-color;
+  &:hover {
+    color: $green-color;
+    border-color: $green-color;
+  }
+}
+.btn-add {
+  display: block;
+  max-width: 370px;
+  background-color: $blue-color;
+  border-color: $blue-color;
+  margin-bottom: 30px;
+  &:hover {
+    color: $blue-color;
+    border-color: $blue-color;
+  }
+  &:focus {
+    color: $blue-color;
+  }
+
+}
+
+//sizing-buttons
+.btn-lg {
+  width: 250px;
+  float: left;
+  margin-bottom: 50px;
+}
+.btn-xl{
+  width: 380px;
+}

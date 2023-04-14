@@ -1,0 +1,46 @@
+// .login-page {
+//  padding:  300px 250px;
+// }
+
+.login-logo {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 50%;
+  img{
+    width: 100%;
+  }
+}
+
+.login-content {
+  // margin: 280px 0;
+  max-width: 1458px;
+  margin: auto;
+  padding-top: 300px;
+  input[type="checkbox"] {
+    vertical-align: top;
+  }
+  .btn-main{
+    margin-bottom: 260px;
+  }
+}
+
+.login-card {
+  max-width: 400px;
+  margin: auto;
+  h2 {
+    margin-bottom: 70px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.logo-mobile {
+  margin: 100px auto;
+}
+
+.copyrights {
+  text-align: center;
+  font-size: 20px;
+  color: $main-color;
+}
